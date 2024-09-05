@@ -1,29 +1,41 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 body{
     margin: 0;
     padding: 0;
     /* min-width: 375px; */
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
 }
 .container{
     width: 100%;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* min-width: 800px; */
 }
 .navcontent{
-    padding: 40px;
+    /* padding: 40px; */
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end ;
+    width: 100%;
 }
 .img1{
+    width: 45%;
     padding: 20px;
     display: flex;
 }
 .nav{
     display: flex;
     gap: 20px;
-    justify-content:end;
+    width: 45%;
+    justify-content:flex-end;
     padding: 20px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     
 }
 .nav a{
@@ -32,15 +44,23 @@ body{
 }
 .textcontent{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
  
 .img2{
-    display: flex;
+    /* display: flex; */
+    width : 45%;
+    min-width: 360px;
 }
 .img2 img{
     /* height: 80%; */
     width: 100%;
+}
+.img3{
+    width : 45%;
+    min-width: 360px;
 }
 #email{
     height: 30px;
@@ -60,13 +80,25 @@ body{
     background-color: rgb(87, 143, 235);
 }
 .hp{
-    width: 500px;
+    /* width: 500px; */
 }
 .text{
-    width: 100%;
-    padding: 80px;
+    width: 45%;
+    min-width: 360px;
+    /* padding: 80px; */
+}
+
+.curve {
+    margin-top: 50px ;
 }
 .curve img{
+    width: 100%;
+    display: block;
+}
+.curve1{
+    display: none;
+}
+.curve1 img{
     width: 100%;
     display: block;
 }
@@ -76,7 +108,9 @@ body{
 .container2{
     background-color: #f8f8fe;
     width: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 .container2 h1{
     margin: 0;
@@ -84,7 +118,7 @@ body{
 .description{
     padding: 10px;
     border-radius: 7px;
-    height: 180px;
+    /* height: 180px; */
     width: 300px;
     background-color: rgb(255, 255, 255);
     box-shadow: 3px 3px 5px;
@@ -104,67 +138,101 @@ h4{
     display: flex;
     gap: 15px;
 }
-.container2{
-    display: flex;
-}
 .img3 img{
-    height: 80%;
-    width: 80%;
+    /* height: 80%; */
+    width: 100%;
 }
 .text1{
-    padding: 80px;
+    padding: 10px;
+    width : 45%;
+    min-width: 360px;
 }
 .downtext{
     /* display: flex; */
+    /* background-color: #00ffff; */
     color: white;
-    padding: 80px;
+    width : 45%
+    /* padding: 80px; */
 }
 .downcontent{
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* gap: 150px; */
     background-color: hsl(238, 22%, 44%);
+    width: 100%;
+    padding : 30px 0;
+}
+.downtext>p {
+    font-size: 16px;
+    width: 60%;
+}
+.downtext>h1 {
+    font-size: 30px;
 }
 #text7{
-    width: 250px;
-    column-gap: 20px;
+    /* width: 250px;
+    column-gap: 20px; */
+    height: 30px;
+    width: 60%;
+    border-radius: 3px;
+    border: none;
 }
 .downsubmit{
-    padding: 80px;
-    width: 100% ;
+    /* padding: 80px; */
+    width: 45% ;
+    text-align: center;
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
 }
 .downsubmit input{
-    display: flex;
+    /* display: flex; */
     /* text-align: center; */
-    margin: 20px;
-    height: 30px;
+    /* margin: 20px; */
+    /* height: 30px; */
 }
 #downget{
-    text-align: center;
+    /* text-align: center; */
     background-color: blue;
+    width: fit-content;
     color: black;
     border: none;
     border-radius: 5px;
-    padding: 7px;
+    padding: 10px 30px;
     cursor: pointer;
+   
 }
 #downget:hover{
     background-color: rgb(87, 143, 235);
 }
 .footer{
     background-color: hsl(243, 87%, 12%);
-    /* display: flex; */
-    justify-content: space-evenly;
-    /* width: 100%; */
-    padding: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* padding: 80px; */
+}
+
+.footer-container {
+    width: 90%;
+    margin: 50px 0;
+}
+
+.logoicon{
+    /* padding-top: 40px;
+    padding-left: 80px; */
+
 }
 .footlogo{
-    
     display: flex;
     justify-content: space-between;
     /* margin-right: 100px; */
 }
 i{
-    padding: 20px;
+    /* padding: 20px; */
     color: white;
 }
 li{
@@ -183,6 +251,11 @@ li{
     display: flex;
     gap: 20px;
 }
+.socialicon{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
 .footlogo ul{
     padding-inline-start: 0;
 }
@@ -192,9 +265,99 @@ li>a:hover{
 i:hover{
     color: rgb(78, 76, 241);
 }
-/* img.footimg:hover{
-    color: brown;
-} */
- /* a img:hover{
-    color: chartreuse;
- } */
+
+
+@media (max-width:767px) {
+    .textcontent{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img2 {
+       width : 70%;
+    }
+
+    .text{
+        width : 70%;
+        padding: 10px;
+    }
+
+    .container2{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .textinput{
+    }
+    #email{
+        margin: 20px;
+        height: 30px;
+        width: 300px;
+    }
+    #get{
+        height: 30px;
+        width: 300px;
+    }
+
+    .img3{
+        width : 70%;
+    }
+
+    .text1{
+        width : 70%;
+    }
+    .curve{
+        display: none;
+    }
+    .curve1{
+        display: ruby;
+        display: block;
+
+    }
+
+    .downcontent{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footlogo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .downtext>p {
+        font-size: 16px;
+        width: fit-content;
+        text-align: center;
+    }
+    .downtext{
+        width: 90%;
+    }
+    .downsubmit{
+    align-items: center;
+    width: 100%;
+    }
+    .aboutus{
+        text-align: left;
+    }
+    .contactus{
+        text-align: left;
+    }
+    .socialicon{
+      
+        width: fit-content;
+        display: flex; 
+        margin: 0 auto;
+    }
+    .img1 img{
+        width: 90%;
+    }
+    #downget{
+        width:61%;
+    }
+    .text1 p{
+        text-align: left;
+    }
+    .description{
+        text-align: left;
+        margin: 10px auto;
+    }
+}
